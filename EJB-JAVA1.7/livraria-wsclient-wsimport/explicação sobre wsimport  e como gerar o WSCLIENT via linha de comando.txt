@@ -1,0 +1,14 @@
+- o wizard do eclipse irá falhar ao tentar criar o client para um webservice dotipo SOAP, é antigo e não encontra as bibliotecas
+
+para criar as classes diretamente basta usar o wsimport do JAVA 1.7 ou JAVA 1.8 e fazer a leitura do WSDL que irá criar o client e as classes
+
+* importante: é necessário fazer o download das bibliotecas(JAR) para que funcione:
+
+COMANDO:
+
+wsimport -s src  -p br.com.caelum.livraria.clientews
+        http://localhost:8080/livraria/LivrariaWS?wsdl
+
+
+bibliotecas - JAR:
+
