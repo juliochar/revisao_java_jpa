@@ -1,0 +1,2 @@
+module add --name=com.mysql --resources="/home/julio/app/mysql-connector-j-8.3.0.jar" --dependencies=javax.api,javax.transaction.api
+/subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql,driver-xa-datasource-class-name=com.mysql.cj.jdbc.MysqlXADataSource)
